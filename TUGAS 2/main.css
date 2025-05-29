@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --pink-color: #e5435b; 
+  }
+      .kaisei-tokumin-regular {
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .kaisei-tokumin-medium {
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .kaisei-tokumin-bold {
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+.body { 
+    font-family: var(--sm-font);
+  }
+
+.bg-primary {
+  background-color: #e5435b !important;
+}
+
+.btn:not(.nav-btns button) {
+  background-color: #fff;
+  color: rgb(85, 85, 85);
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+  background-color: var(--pink-color);
+  color: #fff;
+  border-color: var(--pink-color);
+}
+
+/* text color */
+.text-primary{
+  color: var(--pink-color)!important;
+}
+
+/* navbar */
+
+.navbar {
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.navbar-brand img {
+  width: 30px;
+}
+
+.navbar-brand span {
+  letter-spacing: 2px;
+  font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+  color: var(--pink-color) !important;
+}
+
+.nav-item {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+#header {
+  background: url(./images/banner-img-1.jpg) top/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.inner h1{
+  font-size: 60px;
+  font-family: var(--lg-font);
+}
+.carousel.item .btn{
+  border-color: #fff!important;
+}
+.carousel.item .btn:hover{
+  border-color: var(--pink-color)!important;
+}
+
+/* title */ 
+.title h2::before{
+  position:absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink-color);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn{
+  background-color: var(--pink-color)!important;
+  color: #fff!important;
+  border-color: var(--pink-color)!important;
+}
+
+.filter-button-group .btn:hover{
+  color: #fff!important;
+}
+
+.collection-img{
+  display: inline-block;
+  position: relative;
+}
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #e5435b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* special */
+.special-img span{
+  top: 20px;
+  right: 20px;
+}
+.special-list .btn{
+  padding: 8px 20px!important;
+}
+.special-img img{
+  transition:all 0.3s ease;
+}
+.special-img:hover img{
+  transform: scale(1.2);
+}
+
+/* offers */
+#offers{
+  background: url(./images/offer_img.jpg) center/cover no-repeat;
+}
+#offers .row{
+  min-height: 60vh;
+}
+.offers-content span{
+  font-size: 28px;
+}
+.offers-content h2{
+  font-size: 60px;
+  font-family: var(--lg-font);
+}
+.offers-content .btn{
+  border-color: transparent!important;
+}
+
+/* about */
+#about{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* newsletter */
+#newsletter{
+  background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+  max-width: 600px;
+}
+#newsletter .input-group{
+  max-width: 500px;
+}
+#newsletter .form-control{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+  background-color: var(--pink-color);
+  color: #fff;
+  border-color: var(--pink-color);
+}
+#newsletter .btn:hover{
+  background-color: #000;
+  border-color: #000;
+}
+
+/* footer */
+footer .brand{
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+footer a{
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color:var(--pink)!important;
+}   
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  footer .col-lg-3 {
+      margin-bottom: 20px;
+  }
+}
+
+
+/* media queries */
+@media(min-width: 992px){
+  .nav-item{
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(197, 235, 238);
+}
+
+nav{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav div img{
+    width: 50px;
+}
+
+.judul{
+    text-decoration: none;
+    display: flex;
+    padding: 8px 0;
+    margin-right: 45rem;
+    color: #534f4f;
+    border-bottom: 1px solid rgba(216, 112, 147, 0.014);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(216, 112, 147, 0.014);
+}
+
+nav ul li a:hover{
+    color: rgb(197, 235, 238);
+    border-bottom: 1px solid rgb(197, 235, 238);
+}
+
+.smk{
+    text-decoration: none;
+    color: #534f4f;
+}
+
+.client{
+    background-color: var(--extra-light);
+}
+
+.client__grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+}
+
+.client__card{
+    padding: 2rem;
+    background-color: rgb(222, 247, 250);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.client__card img{
+    max-width: 80px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+}
+
+.client__card p{
+    text-align: justify;
+    color: var(--text-dark);
+}
+
+.falen{
+    text-decoration: none;
+    color: black
+}
+
+.laila{
+    text-decoration: none;
+    color: black
+}
+
+.revina{
+    text-decoration: none;
+    color: black
+}
+
+.about{
+    text-align: center;
+    color: #534f4f;
+    margin-top: 50px;
+}

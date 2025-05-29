@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(197, 235, 238);
+    
+}
+
+nav{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav div img{
+    width: 50px;
+}
+
+.judul{
+    text-decoration: none;
+    display: flex;
+    padding: 8px 0;
+    margin-right: 45rem;
+    color: #534f4f;
+    border-bottom: 1px solid rgba(216, 112, 147, 0.014);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(216, 112, 147, 0.014);
+}
+
+nav ul li a:hover{
+    color: rgb(197, 235, 238);
+    border-bottom: 1px solid rgb(197, 235, 238);
+}
+
+.smk{
+    text-decoration: none;
+    color: #534f4f;
+}
+
+h3{
+    margin: 8px;
+    padding: 8px 0;
+    font-weight: 600;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.kolom{
+    margin-top: 8px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    padding-left: 15px;
+}
+
+.kolom p{
+    padding: 8px;
+}
+
+.hipo{
+    font-weight: 600;
+}
+
+.candi{
+    text-align: justify;
+}
+
+.candi p{
+    padding: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(4, 22, 39);
+}
+
+.about{
+    text-align: center;
+    color: #534f4f;
+    margin-top: 50px;
+}

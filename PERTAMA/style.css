@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: aliceblue; 
+    color: aliceblue;
+    margin: 0;
+}
+
+header{
+    background-color:white;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    position: fixed;
+    width:100% ;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*logo*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+/*styling logo di dalam navigasi*/
+nav .logo {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    text-decoration: none; 
+    font-size:  15px; 
+    font-weight: bold; 
+    white-space: nowrap;
+    color: black;
+}
+
+/*styling gambar di dalam logo*/
+nav .logo img {
+    height: 30px;
+    width: auto;
+    filter: none;
+    border-radius: 50%; /*logo menjadi bulat*/
+}
+
+/* styling list di dalam navigasi*/ 
+nav ul {
+    display: flex; 
+    gap: 20px;
+    list-style: none;
+    color: white;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+nav ul li a:hover{
+    background-color: aquamarine;
+}
+
+/* styling hero sectiom */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero .slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero .slider img.active{
+    opacity: 1;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    width: 80%; /*agar responsif*/
+}
+
+.hero-text h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.hero-button{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-button:hover{
+    background-color: aquamarine;
+    transform: scale(1.05);
+}
+
+/* CSS About */
+
+/* Styling untuk section About */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:white ; /* latar belakang putih */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*efek bayangan lembut */
+}
+
+.about h2 {
+    font-size: 36px; /*ukuran judul */
+    margin-bottom: 10px;
+    color: black;
+}
+
+.about p {
+    font-size: 15px; /*ukuran judul */
+    margin-bottom: 10px;
+    color: black;
+}
+
+.subtitle {
+    font-size: 20px; /*menetapkan ukuran font */
+    color:black; /* menetapkan warna teks */ 
+    margin-bottom: 20px; /* memberikan jarak di bawah elemen */
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between; /* menyusun elemen dengan jarak sama */
+    align-items: start; /* mwnyusun elemen sejajar di bagian atas */
+    gap: 40px; /* memberikan jarak antara elemen */
+    padding: 20px; /* memberikan ruang di dalam kontainer */
+    max-width: 900px; /* membatasi lebar kontainer */
+    margin: 0 auto; /* menempatkan kontainer di tengah halaman secara horizontal */
+}
+
+.mission, .vision {
+    flex: 1; /* membuat ukuran seimbang */
+    text-align: left;
+    background: none; /* menghapus latar belakang  */
+    box-shadow: none; /* menghapus bayangan */
+}
+
+.mission h3, .vision h3 {
+    font-size: 24px; 
+    font-weight: bold; /* menebalkan font judul */ 
+    margin-bottom: 10px; /* memberikan jarak di bawah judul */
+    color: rgb(28, 92, 28);
+}
+
+.mission p, .vision p {
+    font-size: 16px;
+    color: black; /* menetapkan warna teks */
+    text-align: justify; /* menyusun teks agar rata kiri kanan */
+    line-height: 1.6; /* menetapkan jarak atar baris */
+}
+
+.mission ul li {
+    font-size: 16px;
+    color: black; /* menetapkan warna teks */
+    text-align: justify; /* menyusun teks agar rata kiri kanan */
+    line-height: 1.6; /* menetapkan jarak atar baris */
+}
+
+.vision button {
+    background-color: aquamarine; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    padding: 10px 20px; /* Ruang dalam tombol agar lebih nyaman */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Membuat sudut tombol sedikit melengkung */
+    cursor: pointer; /* Kursor berubah jadi tangan saat diarahkan */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+
+/* Client */
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 50px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo:hover {
+    filter: none; /* Remove grayscale filter on hover */
+}
+
+/* card */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container h1{
+    font-size: 36px; /*ukuran judul */
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+.container p{
+    font-size: 15px; /*ukuran judul */
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 13px;
+    padding: 23px;
+    width: 42%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.card i {
+    font-size: 24px;
+    color: #28a745; /* Change icon color to blue */
+    margin-right: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* Portofolio */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef0e5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px; /*mengatur jarak teks*/
+}
+
+/* Tombol Filter */
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.filter-buttons button.active, 
+.filter-buttons button:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Galeri */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*footer*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: rgb(70, 68, 68);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid aquamarine;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: aquamarine;
+}
+
+.newsletter form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border: none;
+    background-color: aquamarine;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: aquamarine;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: aquamarine;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

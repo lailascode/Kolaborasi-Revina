@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #C5C3C3 27%, #383535 73%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+  }
+  
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* ini untuk center horizontal */
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-left h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 0;
+  }
+  
+  .hero-left h4 {
+    font-size: 36px;
+    color: #c5c3c3;
+    margin: 0.5rem 0;
+  }
+  
+  
+  .hero-left p {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
+  
+  .hero-image {
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  .hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    max-height: 100%;
+    z-index: 1;
+  }
+
+  .btn-buy {
+    background-color: #383535;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+  }
+  
+  .btn-buy:hover {
+    background-color: #2e2e2e;
+  }
+  
+  .navbar-custom {
+    background: transparent;
+    z-index: 3;
+  }
+
+  .about img,
+  .gallery img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .underline {
+    border-bottom: 2px solid #000; /* You can adjust the thickness and color here */
+    display: inline-block;
+  }
+
+  .img-fluid.rounded-circle {
+    width: 120px; /* Sesuaikan ukuran sesuai keinginan */
+    height: 120px;
+    object-fit: cover; /* Agar proporsional */
+    border-radius: 50%; /* Untuk memastikan bentuk bulat */
+  }
+  
+  .contact-box {
+  background-color: #cfcfcf; /* Warna abu-abu sesuai desain */
+  border-radius: 5px;
+  max-width: 900px;     /* Atur agar tidak full */
+  margin: 0 auto;        /* Posisi tengah */
+}
+  .contact form label {
+    font-weight: 600;
+  }
+  
+  .footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 0;
+    font-family: sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-left h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .footer-left p {
+    margin: 5px 0 0;
+  }
+  
+  .footer-right {
+    text-align: right;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-menu {
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-icons img {
+    width: 24px;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom small {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.5;
+  }

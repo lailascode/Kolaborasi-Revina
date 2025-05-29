@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="logos/logo.png" width="50px" height="35px"> PrimeWay Travel
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Other
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        <li><a class="dropdown-item" href="galery.html">Gallery</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="sosmed.html">Sosmed</a></li>
+                    </ul>
+                </li>
+                <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit" style="background-color: #2196F3; border-color: #2196F3; color: white;">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="About" class="py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="about/1.jpg" class="img-fluid rounded" alt="About PrimeWay Travel">
+                <img src="about/2.jpg" class="img-fluid rounded" alt="About PrimeWay Travel">
+                <img src="about/3.jpg" class="img-fluid rounded" alt="About PrimeWay Travel">
+                <img src="about/4.jpg" class="img-fluid rounded" alt="About PrimeWay Travel">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-light">About PrimeWay Travel</h2>
+                <p class="text-light">PrimeWay Travel is your gateway to unforgettable journeys, where every trip is a blend of adventure, comfort, and extraordinary experiences.</p>
+                <p class="text-light">From tropical paradises to breathtaking mountains, we curate tailor-made travel packages that cater to every type of explorer.</p>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Smooth Scroll Effect -->
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Footer -->
+ <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Section</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Section</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Section</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="email" placeholder="Email address" aria-label="Email">
+                    <button class="btn  btn-primary" type="submit">Subscribe </button>
+                  </form>
+                   
+            </div>
+        </div>
+        <hr>
+        <p class="text-right mb-0">© 2024 Company, Inc. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
